@@ -1,0 +1,20 @@
+{
+  "name": "marketplace-server",
+  "version": "1.0.0",
+  "description": "Backend API for the e-commerce multi-filter marketplace app",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.4"
+  }
+}

@@ -1,0 +1,30 @@
+const products = [
+  { id: 'p1', name: 'Aurora Smart Watch', category: 'Electronics', price: 189, rating: 4.6, reviewCount: 142, image: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80', badge: 'Best Seller' },
+  { id: 'p2', name: 'Nimbus Headphones', category: 'Electronics', price: 249, rating: 4.4, reviewCount: 98, image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80', badge: 'New' },
+  { id: 'p3', name: 'Lumen Laptop Sleeve', category: 'Electronics', price: 89, rating: 4.2, reviewCount: 63, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p4', name: 'Vertex 4K Monitor', category: 'Electronics', price: 599, rating: 4.7, reviewCount: 214, image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80', badge: 'Best Seller' },
+  { id: 'p5', name: 'Echo Mini Speaker', category: 'Electronics', price: 129, rating: 4.3, reviewCount: 104, image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p6', name: 'Nova Gaming Mouse', category: 'Electronics', price: 79, rating: 4.1, reviewCount: 87, image: 'https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p7', name: 'Atlas Wireless Charger', category: 'Electronics', price: 45, rating: 4.0, reviewCount: 56, image: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p8', name: 'Glacier SSD Drive', category: 'Electronics', price: 199, rating: 4.8, reviewCount: 176, image: 'https://images.unsplash.com/photo-1587202372775-e229f172b492?auto=format&fit=crop&w=800&q=80', badge: 'Best Seller' },
+  { id: 'p9', name: 'Harbor Denim Jacket', category: 'Apparel', price: 119, rating: 4.5, reviewCount: 96, image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80', badge: 'New' },
+  { id: 'p10', name: 'Cove Knit Sweater', category: 'Apparel', price: 89, rating: 4.2, reviewCount: 74, image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p11', name: 'Solstice Linen Shirt', category: 'Apparel', price: 69, rating: 4.3, reviewCount: 88, image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p12', name: 'Marlow Tailored Blazer', category: 'Apparel', price: 159, rating: 4.7, reviewCount: 129, image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80', badge: 'Best Seller' },
+  { id: 'p13', name: 'Summit Running Shoes', category: 'Footwear', price: 129, rating: 4.6, reviewCount: 152, image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80', badge: 'Best Seller' },
+  { id: 'p14', name: 'Trailblaze Hiking Boots', category: 'Footwear', price: 179, rating: 4.4, reviewCount: 108, image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p15', name: 'Aero Court Sneakers', category: 'Footwear', price: 99, rating: 4.3, reviewCount: 91, image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p16', name: 'Drift Slip-On Loafers', category: 'Footwear', price: 109, rating: 4.2, reviewCount: 76, image: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p17', name: 'Luna Ceramic Vase', category: 'Home', price: 74, rating: 4.1, reviewCount: 64, image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p18', name: 'Sage Throw Blanket', category: 'Home', price: 54, rating: 4.0, reviewCount: 58, image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p19', name: 'Northwood Coffee Table', category: 'Home', price: 349, rating: 4.8, reviewCount: 167, image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80', badge: 'Best Seller' },
+  { id: 'p20', name: 'Basil Desk Lamp', category: 'Home', price: 59, rating: 4.2, reviewCount: 71, image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p21', name: 'Cedar Tote Bag', category: 'Accessories', price: 49, rating: 4.3, reviewCount: 84, image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p22', name: 'Mira Leather Wallet', category: 'Accessories', price: 69, rating: 4.4, reviewCount: 93, image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p23', name: 'Orbit Sunglasses', category: 'Accessories', price: 89, rating: 4.6, reviewCount: 112, image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80', badge: 'New' },
+  { id: 'p24', name: 'Monarch Watch Strap', category: 'Accessories', price: 39, rating: 3.9, reviewCount: 44, image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80' },
+  { id: 'p25', name: 'Quill Travel Backpack', category: 'Accessories', price: 129, rating: 4.5, reviewCount: 122, image: 'https://images.unsplash.com/photo-1581605405669-fcdf81169470?auto=format&fit=crop&w=800&q=80', badge: 'Best Seller' },
+  { id: 'p26', name: 'Pico Smart Ring', category: 'Electronics', price: 299, rating: 4.5, reviewCount: 132, image: 'https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?auto=format&fit=crop&w=800&q=80', badge: 'New' }
+];
+
+export default products;
